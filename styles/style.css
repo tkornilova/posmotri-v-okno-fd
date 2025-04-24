@@ -56,3 +56,14 @@ ol {
   gap: 30px;
   padding: 133px 30px;
 }
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 78px 0 0;
+}
+
+.result__video {
+  width: 100%;
+}
