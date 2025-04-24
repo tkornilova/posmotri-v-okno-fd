@@ -74,9 +74,19 @@ ol {
   margin: 78px 0 0;
 }
 
+/* Видео */
+
+.result__video-container {
+  width: 711px;
+  height: 386px;
+}
+
 .result__video {
   width: 100%;
+  object-fit: cover;
 }
+
+/* Форма */
 
 .search-form {
   display: grid;
