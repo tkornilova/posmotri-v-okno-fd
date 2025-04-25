@@ -123,6 +123,7 @@ ol {
   line-height: 100%;
 }
 
+.search-form__label:has(:focus-visible),
 .search-form__label:has(:focus-visible) > .search-form__textfield {
   outline: 1px solid var(--main-white);
   outline-offset: 1px;
@@ -138,7 +139,6 @@ ol {
   border: none;
   border-top: 1px solid var(--main-white);  
   border-bottom: 1px solid var(--main-white);
-  padding: 5px 0;
   padding: 2px;
   color: var(--main-white);
   font-weight: 400;
@@ -174,11 +174,6 @@ ol {
 .search-form__label:hover > .search-form__label-text {
   text-decoration: underline;
   text-underline-offset: 5px;
-}
-
-.search-form__label:has(:focus-visible) {
-  outline: 1px solid var(--main-white);
-  outline-offset: 1px;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after,
