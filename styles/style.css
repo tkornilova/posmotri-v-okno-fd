@@ -4,15 +4,19 @@
   box-sizing: border-box;
 }
 
+/* visually-hidden */
+
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
-} 
+}
+
+/* Глобальные стили */
 
 html {
   block-size: 100%;
@@ -48,6 +52,7 @@ ol {
 }
 
 /* Кастомный скроллбар */
+
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
 }
@@ -103,10 +108,10 @@ ol {
 
 .search-form__fieldset-title {
   width: fit-content;
+  margin: 0 0 6px;
+  font-weight: 400;
   font-size: 18px;
   line-height: 100%;
-  font-weight: 400;
-  margin: 0 0 6px;
 }
 
 .search-form__label:has(:focus-visible) > .search-form__textfield {
@@ -121,33 +126,33 @@ ol {
 
 .search-form__textfield {
   width: 225px;
-  appearance: none;
   border: none;
   border-top: 1px solid #fff;  
   border-bottom: 1px solid #fff;
-  background-color: transparent;
   padding: 5px 0;
+  padding: 2px;
+  color: #fff;
+  font-weight: 400;
   font-size: 18px;
   line-height: 100%;
-  font-weight: 400;
-  color: #fff;
-  padding: 2px;
+  background-color: transparent;
+  appearance: none;
 }
 
 .search-form__textfield::placeholder {
+  align-self: center;
+  opacity: 0.7;
+  color: #fff;
+  font-weight: 400;
   font-size: 17px;
   line-height: 100%;
-  font-weight: 400;
-  color: #fff;
-  opacity: 0.7;
-  align-self: center;
 }
 
 .search-form__checkbox-list {
-  width: 212px;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  width: 212px;
 }
 
 .search-form__checkbox-list .search-form__label {
@@ -170,12 +175,12 @@ ol {
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after,
 .search-form__label:active > .search-form__pseudo-checkbox::after {
   content: "";
-  width: 15px;
-  height: 15px;
   position: absolute;
   inset: 0;
-  background-color: #fff;
+  width: 15px;
+  height: 15px;
   margin: auto;
+  background-color: #fff;
 }
 
 .search-form__label:active > .search-form__label-text {
@@ -194,13 +199,13 @@ ol {
   width: 100%;
   min-height: 34px;
   border: 1px solid #fff;
-  background-color: transparent;
+  padding: 7px;
+  color: #fff;
+  font-weight: 700;
   font-size: 18px;
   line-height: 100%;
-  font-weight: 700;
-  color: #fff;
+  background-color: transparent;
   cursor: pointer;
-  padding: 7px;
 }
 
 .button:hover {
@@ -209,8 +214,8 @@ ol {
 }
 
 .button:active {
-  background-color: #545050;
   text-decoration: none;
+  background-color: #545050;
 }
 
 .button:focus {
@@ -223,26 +228,26 @@ ol {
 }
 
 .search-form__submit-button {
-  max-width: 194px;
   align-self: end;
+  max-width: 194px;
 }
 
 /* Контейнер списка */
 
 .content__details {
   display: grid;
-  gap: 26px;
+  gap: 19px;
 }
 
 /* Главный заголовок */
 
 .title {
+  color: #fff;
   font-family: Oswald;
-  font-size: 75px;
   font-weight: 700;
+  font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
-  color: #fff;
 }
 
 .content__accent {
@@ -253,10 +258,11 @@ ol {
 
 .content__list-container {
   position: relative;
-  height: 293px;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  height: 297px;
+  /* Добавляет отступ около скролла */
   padding-right: 3px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .content__list {
@@ -265,21 +271,21 @@ ol {
 }
 
 .content__list-item:not(:last-child) {
-  margin: 0 0 24px;
+  margin: 0 0 21px;
 }
 
 .content__card-link {
-  text-decoration: none;
-  color: #fff;
   display: block;
   border: 1px solid transparent;
+  color: #fff;
+  text-decoration: none;
   cursor: pointer;
 }
 
 .content__card-link:hover .content__video-card-description-container {
   text-decoration: underline;
-  text-underline-offset: 2px;
   text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
 
 .content__card-link:focus {
@@ -307,18 +313,19 @@ ol {
 }
 
 .content__video-card-title {
-  font-size: 30px;
+  margin: 0 0 6px;
+  overflow: hidden;
   font-weight: 700;
+  font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .content__video-card-description {
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
   line-height: 16.5px;
 }
 
