@@ -341,6 +341,7 @@ ol {
 
 .content__video-card-thumbnail {
   width: 100%;
+  object-fit: cover;
 }
 
 .more-button {
