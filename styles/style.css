@@ -333,6 +333,10 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 16.5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
