@@ -1,3 +1,10 @@
+:root {
+  --main-white: #fff;
+  --main-bg: #1b1919;
+  --main-gray: #545050;
+  --scrollbar: #D9D9D;
+}
+
 *,
 *::before,
 *::after {
@@ -24,10 +31,10 @@ html {
 
 .page {
   margin: auto;
-  color: #fff;
+  color: var(--main-white);
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
-  background-color: #1b1919;
+  background-color: var(--main-bg);
   inline-size: 1200px;
   block-size: 100%;
 }
@@ -62,7 +69,7 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: var(--scrollbar);
 }
 
 .content {
@@ -115,23 +122,23 @@ ol {
 }
 
 .search-form__label:has(:focus-visible) > .search-form__textfield {
-  outline: 1px solid #fff;
+  outline: 1px solid var(--main-white);
   outline-offset: 1px;
 }
 
 .search-form__label:active > .search-form__textfield {
-  border: 1px solid #fff;
+  border: 1px solid var(--main-white);
   outline: none;
 }
 
 .search-form__textfield {
   width: 225px;
   border: none;
-  border-top: 1px solid #fff;  
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid var(--main-white);  
+  border-bottom: 1px solid var(--main-white);
   padding: 5px 0;
   padding: 2px;
-  color: #fff;
+  color: var(--main-white);
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -142,7 +149,7 @@ ol {
 .search-form__textfield::placeholder {
   align-self: center;
   opacity: 0.7;
-  color: #fff;
+  color: var(--main-white);
   font-weight: 400;
   font-size: 17px;
   line-height: 100%;
@@ -168,7 +175,7 @@ ol {
 }
 
 .search-form__label:has(:focus-visible) {
-  outline: 1px solid #fff;
+  outline: 1px solid var(--main-white);
   outline-offset: 1px;
 }
 
@@ -180,7 +187,7 @@ ol {
   width: 15px;
   height: 15px;
   margin: auto;
-  background-color: #fff;
+  background-color: var(--main-white);
 }
 
 .search-form__label:active > .search-form__label-text {
@@ -192,15 +199,15 @@ ol {
   display: block;
   width: 19px;
   height: 19px;
-  border: 1px solid #fff;
+  border: 1px solid var(--main-white);
 }
 
 .button {
   width: 100%;
   min-height: 34px;
-  border: 1px solid #fff;
+  border: 1px solid var(--main-white);
   padding: 7px;
-  color: #fff;
+  color: var(--main-white);
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
@@ -215,7 +222,7 @@ ol {
 
 .button:active {
   text-decoration: none;
-  background-color: #545050;
+  background-color: var(--main-gray);
 }
 
 .button:focus {
@@ -223,7 +230,7 @@ ol {
 }
 
 .button:focus-visible {
-  outline: 1px solid #fff;
+  outline: 1px solid var(--main-white);
   outline-offset: 1px;
 }
 
@@ -242,7 +249,7 @@ ol {
 /* Главный заголовок */
 
 .title {
-  color: #fff;
+  color: var(--main-white);
   font-family: Oswald;
   font-weight: 700;
   font-size: 75px;
@@ -251,7 +258,7 @@ ol {
 }
 
 .content__accent {
-  color: #545050;
+  color: var(--main-gray);
 }
 
 /* Список карточек */
@@ -277,7 +284,7 @@ ol {
 .content__card-link {
   display: block;
   border: 1px solid transparent;
-  color: #fff;
+  color: var(--main-white);
   text-decoration: none;
   cursor: pointer;
 }
@@ -293,13 +300,13 @@ ol {
 }
 
 .content__card-link:focus-visible {
-  border: 1px solid #fff;
+  border: 1px solid var(--main-white);
   outline: none;
 }
 
 .content__card-link:active {
   outline: none;
-  background-color: #545050;
+  background-color: var(--main-gray);
 }
 
 .content__video-card {
