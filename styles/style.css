@@ -302,7 +302,8 @@ ol {
   outline: none;
 }
 
-.content__card-link:active {
+.content__card-link:active,
+.content__card-link_current {
   outline: none;
   background-color: var(--main-gray);
 }
