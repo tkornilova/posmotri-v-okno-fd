@@ -141,6 +141,7 @@ ol {
   border-bottom: 1px solid var(--main-white);
   padding: 2px;
   color: var(--main-white);
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -152,8 +153,9 @@ ol {
   align-self: center;
   opacity: 0.7;
   color: var(--main-white);
+  font-family: inherit;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 100%;
 }
 
@@ -264,19 +266,21 @@ ol {
 .content__list-container {
   position: relative;
   height: 297px;
-  /* Добавляет отступ около скролла */
-  padding-right: 3px;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
 .content__list {
   /* Для правильного отображения outline */
-  margin: 2px 0 30px 2px;
+  margin: 2px 0 30px;
+}
+
+.content__list-item {
+  padding: 0 3px;
 }
 
 .content__list-item:not(:last-child) {
-  margin: 0 0 21px;
+  margin: 0 0 22px;
 }
 
 .content__card-link {
@@ -298,8 +302,7 @@ ol {
 }
 
 .content__card-link:focus-visible {
-  border: 1px solid var(--main-white);
-  outline: none;
+  outline: 1px solid var(--main-white);
 }
 
 .content__card-link:active,
@@ -310,7 +313,7 @@ ol {
 
 .content__video-card {
   display: grid;
-  grid-template-columns: 1fr 194px;
+  grid-template-columns: 1fr 190px;
   gap: 5px;
 }
 
@@ -319,8 +322,9 @@ ol {
 }
 
 .content__video-card-title {
-  margin: 0 0 6px;
+  margin: 0 0 5px;
   overflow: hidden;
+  font-family: 'Oswald', sans-serif;;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
