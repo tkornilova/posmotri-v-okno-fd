@@ -37,6 +37,8 @@ html {
   background-color: var(--main-bg);
   inline-size: 1200px;
   block-size: 100%;
+  display: flex;
+  align-items: center;
 }
 
 h1,
