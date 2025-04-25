@@ -231,3 +231,18 @@ ol {
   display: grid;
   gap: 26px;
 }
+
+/* Главный заголовок */
+
+.title {
+  font-family: Oswald;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.content__accent {
+  color: #545050;
+}
