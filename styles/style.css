@@ -224,3 +224,10 @@ ol {
   max-width: 194px;
   align-self: end;
 }
+
+/* Контейнер списка */
+
+.content__details {
+  display: grid;
+  gap: 26px;
+}
