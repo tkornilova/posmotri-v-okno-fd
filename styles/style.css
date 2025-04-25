@@ -30,6 +30,8 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: center;
   margin: auto;
   color: var(--main-white);
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -37,8 +39,6 @@ html {
   background-color: var(--main-bg);
   inline-size: 1200px;
   block-size: 100%;
-  display: flex;
-  align-items: center;
 }
 
 h1,
@@ -78,7 +78,7 @@ ol {
   display: grid;
   grid-template-columns: 1fr 397px;
   gap: 30px;
-  padding: 133px 30px;
+  padding: 30px;
 }
 
 .result {
@@ -330,13 +330,13 @@ ol {
 }
 
 .content__video-card-description {
+  display: -webkit-box;
+  overflow: hidden;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.5px;
-  display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
