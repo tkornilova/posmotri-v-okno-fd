@@ -188,8 +188,8 @@ ol {
   border: 1px solid #fff;
 }
 
-.search-form__submit-button {
-  width: 194px;
+.button {
+  width: 100%;
   min-height: 34px;
   border: 1px solid #fff;
   background-color: transparent;
@@ -197,26 +197,30 @@ ol {
   line-height: 100%;
   font-weight: 700;
   color: #fff;
-  align-self: end;
   cursor: pointer;
   padding: 7px;
 }
 
-.search-form__submit-button:hover {
+.button:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
-.search-form__submit-button:active {
+.button:active {
   background-color: #545050;
   text-decoration: none;
 }
 
-.search-form__submit-button:focus {
+.button:focus {
   outline: none;
 }
 
-.search-form__submit-button:focus-visible {
+.button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;
+}
+
+.search-form__submit-button {
+  max-width: 194px;
+  align-self: end;
 }
